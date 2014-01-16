@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Omniauth::Youyu::VERSION
   spec.authors       = ["chenqh"]
   spec.email         = ["chenqh@cimutech.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Youyu OAuth2 Strategy for Omniauth}
+  spec.summary       = %q{Youyu OAuth2 Strategy for Omniauth}
+  spec.homepage      = "https://github.com/cimutech/omniauth-youyu"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,9 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  # Specs
+  spec.add_development_dependency('rspec-rails', '~> 2.8.1')
+
+  spec.add_runtime_dependency 'omniauth-oauth2', '~> 1.1'
+  spec.add_runtime_dependency 'httparty', '~> 0.12.0'
 end
