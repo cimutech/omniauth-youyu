@@ -24,5 +24,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency('rspec-rails', '~> 2.8.1')
 
   spec.add_runtime_dependency 'omniauth-oauth2', '~> 1.1'
-  spec.add_runtime_dependency 'httparty', '~> 0.12.0'
 end
