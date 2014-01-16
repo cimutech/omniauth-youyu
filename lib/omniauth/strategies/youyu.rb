@@ -1,5 +1,3 @@
-require "omniauth/youyu/configuration"
-
 module OmniAuth
   module Strategies
     class Youyu < OmniAuth::Strategies::OAuth2
