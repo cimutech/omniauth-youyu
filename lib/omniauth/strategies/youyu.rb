@@ -1,3 +1,5 @@
+require 'omniauth/strategies/oauth2'
+
 module OmniAuth
   module Strategies
     class Youyu < OmniAuth::Strategies::OAuth2
