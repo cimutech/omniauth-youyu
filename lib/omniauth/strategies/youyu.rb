@@ -3,7 +3,7 @@ require 'omniauth/strategies/oauth2'
 module OmniAuth
   module Strategies
     class Youyu < OmniAuth::Strategies::OAuth2
-      option :name, :doorkeeper
+      option :name, :youyu
 
       option :client_options, {
           :site            => "http://passport.youyu.im",
