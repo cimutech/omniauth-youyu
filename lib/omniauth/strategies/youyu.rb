@@ -8,17 +8,17 @@ module OmniAuth
       option :client_options, {
           :site            => "http://passport.youyu.im",
           :authorize_path  => "/oauth/authorize",
-          :token_url       => "/oauth/access_token",
+          :token_url       => "/oauth/token",
       }
 
       info do
         {
-          :email => raw_info["email"]
+          :email => (raw_info["email"] if raw_info)
         }
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/api/v1/me.json').parsed || {}
+        @raw_info ||= access_token.get('/api/v1/me.json').parsed
       end
     end
   end
