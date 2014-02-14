@@ -11,10 +11,14 @@ module OmniAuth
           :token_url       => "/oauth/token",
       }
 
+      uid do
+        raw_info["id"]
+      end
+
       info do
         {
-          :email => (raw_info["email"] if raw_info),
-          :name => (raw_info["name"] if raw_info)
+          :email => raw_info["email"],
+          :name => raw_info["name"]
         }
       end
 

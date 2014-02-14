@@ -16,4 +16,3 @@ describe OmniauthYouyu do
   end
 
 end
-end
